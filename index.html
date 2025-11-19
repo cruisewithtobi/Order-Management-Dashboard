@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Order Management Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="styleindex
+    .css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">Order Management Dashboard</h1>
+      <form class="search" role="search">
+        <input
+          class="search-input"
+          type="search"
+          placeholder="Search orders..."
+        />
+      </form>
+    </header>
+
+    <main class="main">
+      <section class="orders" aria-label="Order list">
+        <div class="orders-head">
+          <div class="col id">Order ID</div>
+          <div class="col customer">Customer</div>
+          <div class="col amount">Amount</div>
+          <div class="col status">Status</div>
+        </div>
+
+        <div class="order-row">
+          <div class="col id">#1001</div>
+          <div class="col customer">Aisha Bello</div>
+          <div class="col amount">₦12,500</div>
+          <div class="col status">
+            <span class="badge shipped">Shipped</span>
+          </div>
+        </div>
+
+        <div class="order-row">
+          <div class="col id">#1002</div>
+          <div class="col customer">Emeka N.</div>
+          <div class="col amount">₦3,200</div>
+          <div class="col status">
+            <span class="badge pending">Pending</span>
+          </div>
+        </div>
+
+        <div class="order-row">
+          <div class="col id">#1003</div>
+          <div class="col customer">Zainab K.</div>
+          <div class="col amount">₦7,890</div>
+          <div class="col status">
+            <span class="badge cancelled">Cancelled</span>
+          </div>
+        </div>
+
+        <div class="order-row">
+          <div class="col id">#1004</div>
+          <div class="col customer">John Doe</div>
+          <div class="col amount">₦15,000</div>
+          <div class="col status">
+            <span class="badge shipped">Shipped</span>
+          </div>
+        </div>
+
+        <div class="order-row">
+          <div class="col id">#1005</div>
+          <div class="col customer">Ngozi Umeh</div>
+          <div class="col amount">₦6,400</div>
+          <div class="col status">
+            <span class="badge pending">Pending</span>
+          </div>
+        </div>
+      </section>
+
+      <aside class="customer" aria-label="Customer info">
+        <h2>Customer Info</h2>
+        <div class="customer-card">
+          <img
+            src="https://via.placeholder.com/80"
+            alt="Customer photo"
+            class="profile-img"
+          />
+          <p class="name">Name: <strong>Aisha Bello</strong></p>
+          <p class="email">
+            Email: <a href="mailto:aisha@example.com">aisha@example.com</a>
+          </p>
+          <p class="phone">Phone: +234 801 234 5678</p>
+          <p class="address">Address: 14, Adeola Street, Lagos</p>
+          <p class="total-orders">Total Orders: <strong>8</strong></p>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Orders • Admin Dashboard</p>
+    </footer>
+  </body>
+</html>
